@@ -76,6 +76,7 @@ class UserModelCase(unittest.TestCase):
         db.session.commit()
 
         # check the followed posts of each user
+        # check the followed posts of each user
         f1 = u1.followed_posts().all()
         f2 = u2.followed_posts().all()
         f3 = u3.followed_posts().all()
